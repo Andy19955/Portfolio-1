@@ -1,3 +1,5 @@
+@import url("./variables.css");
+
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +17,7 @@ body {
   letter-spacing: 0.5px;
   line-height: 24px;
   color: #fff;
-  background-color: #34353a;
+  background-color: var(--gray-dark);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,9 +27,176 @@ main {
   flex: 1;
 }
 
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
 header.main-header {
-  height: 80px;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.header-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: inherit;
+}
+
+.branding {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.navigation {
+  list-style-type: none;
+}
+
+.navigation-collapsable {
+  z-index: 3;
+}
+
+.navigation .navigation-link:hover {
+  color: var(--yellow-light);
+}
+
+.navigation-link {
+  font-size: 18px;
+}
+
+.navigation-horizontal {
+  display: flex;
+  gap: 15px;
+}
+
+.navigation-toggler {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dark-bg {
+  background-color: var(--gray-darker);
+}
+
+.light-bg {
+  background-color: var(--gray-light);
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  padding: 15px 30px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-content {
+  padding: 10px 0;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card,
+.banner {
+  background-color: var(--gray-light);
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card {
+  width: 150px;
+  height: 175px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: var(--yellow-light);
+  transition: 0.15s ease-in;
+}
+
+.card-icon {
+  font-size: 50px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.banner {
+  width: 500px;
+}
+
+.banner:hover {
+  background-color: var(--yellow-dark);
+  transition: 0.15s ease-in;
+  cursor: pointer;
+}
+
+.banner-image {
+  max-width: 300px;
+}
+
+img {
+  width: 100%;
+}
+
+.banner-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .navigation-collapsable {
+    background-color: var(--black);
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-top: 1px solid var(--gray-dark);
+    padding: 0 0 25px 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .navigation-horizontal {
+    flex-direction: column;
+    gap: 0;
+    width: 80%;
+    margin: auto;
+  }
+
+  .navigation-horizontal .navigation-link {
+    border-bottom: 1px solid var(--gray-light);
+    padding: 20px;
+    display: block;
+  }
+
+  .navigation-toggler,
+  .visible {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 544px) {
+  .branding {
+    font-size: 20px;
+  }
 }

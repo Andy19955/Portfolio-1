@@ -3,16 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Andreas Thune - Portfolio</title>
+    <meta name="description" content="The portfolio of Andreas Thune." />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" type="image/icon" href="/images/favicon.ico" />
+    <script src="https://kit.fontawesome.com/2f7002576b.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" type="module"></script>
   </head>
   <body>
     <header class="main-header">
-      <div>Logo</div>
-      <div>Meny</div>
+      <nav class="header-navbar">
+        <div class="branding">
+          <a href="/" title="The Guinea Pigs">Andreas Thune</a>
+        </div>
+        <div class="navigation-collapsable" id="navigation-collapsable">
+          <ul class="navigation navigation-horizontal">
+            <li>
+              <a href="#about" class="navigation-link">About</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation-link">Skills</a>
+            </li>
+            <li>
+              <a href="#projects" class="navigation-link">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="navigation-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div id="toggle-nav-button" class="navigation-toggler">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
     </header>
     <main>
-      <section class="hero">Hello</section>
+      <section id="hero" class="light-bg">
+        <div class="content-wrapper">
+          <h1 class="page-title">Hello</h1>
+          <div class="section-content">
+            <p>I'm Andreas Thune</p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="content-wrapper">
+          <h2 class="section-title">About</h2>
+          <div class="section-content">
+            <p>
+              This is the section where I will write about me and my history. For now, I need this text that is just made up in a hurry to check how it will look when deployed to the website. I need a
+              little more text to really test how it will look on the website. That's why I'm writing a little more on this text to get more content.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="dark-bg">
+        <div class="content-wrapper">
+          <h2 class="section-title">Skills</h2>
+          <div class="section-content">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-icon">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="card-title">HTML</div>
+              </div>
+              <div class="card">
+                <div class="card-icon">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="card-title">CSS</div>
+              </div>
+              <div class="card">
+                <div class="card-icon">
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="card-title">JavaScript</div>
+              </div>
+              <div class="card">
+                <div class="card-icon"><i class="fa-brands fa-php"></i></div>
+                <div class="card-title">PHP</div>
+              </div>
+              <div class="card">
+                <div class="card-icon"><i class="fa fa-database"></i></div>
+                <div class="card-title">MySQL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="content-wrapper">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-content">
+            <div class="card-wrapper">
+              <div class="banner">
+                <div class="banner-image">
+                  <img src="https://images.unsplash.com/photo-1727791962712-1d36ec09b068?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </div>
+                <div class="banner-description">
+                  <h3 class="banner-title">The Guinea Pigs</h3>
+                  I am writing this text so that I can see how this element looks with a little content. If I didn't write this, then I wouldn't be able to see how it would look with content. That
+                  would be very sad and boring.
+                </div>
+              </div>
+              <div class="banner">
+                <div class="banner-image">
+                  <img src="https://images.unsplash.com/photo-1727791962712-1d36ec09b068?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </div>
+                <div class="banner-description">
+                  <h3 class="banner-title">RainyDays</h3>
+                  I am writing this text so that I can see how this element looks with a little content. If I didn't write this, then I wouldn't be able to see how it would look with content. That
+                  would be very sad and boring.
+                </div>
+              </div>
+              <div class="banner">
+                <div class="banner-image">
+                  <img src="https://images.unsplash.com/photo-1727791962712-1d36ec09b068?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </div>
+                <div class="banner-description">
+                  <h3 class="banner-title">Title</h3>
+                  I am writing this text so that I can see how this element looks with a little content. If I didn't write this, then I wouldn't be able to see how it would look with content. That
+                  would be very sad and boring.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="light-bg">
+        <div class="content-wrapper">Contact</div>
+      </section>
     </main>
     <footer>Footer</footer>
   </body>
