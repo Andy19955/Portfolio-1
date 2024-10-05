@@ -84,10 +84,18 @@ header.main-header {
   background-color: var(--gray-light);
 }
 
+.highlight-text {
+  color: var(--yellow-light);
+}
+
 .content-wrapper {
   max-width: 1280px;
   padding: 40px 30px;
   margin: 0 auto;
+}
+
+.page-title {
+  color: var(--yellow-light);
 }
 
 .section-title {
@@ -99,24 +107,41 @@ header.main-header {
   padding: 40px 0;
 }
 
-.primary-button,
-.secondary-button {
+.primary-button {
   padding: 10px 20px;
   border-radius: 5px;
+  border: 3px solid var(--yellow-light);
+  display: inline-block;
+  color: var(--yellow-light);
+  font-weight: bold;
 }
 
-.primary-button:hover,
-.secondary-button:hover {
+.primary-button:hover {
   background: var(--yellow-light);
   transition: 0.15s ease-in-out;
+  color: var(--black);
 }
 
-.primary-button {
-  background-color: var(--yellow-dark);
+.hero-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
-.secondary-button {
-  background-color: var(--yellow-dark);
+.hero-image {
+  max-width: 300px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-group {
+  margin-bottom: 30px;
 }
 
 .card-wrapper {
@@ -156,6 +181,10 @@ header.main-header {
   font-weight: bold;
 }
 
+.banner {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
 .banner-image,
 .banner-image img {
   width: 100%;
@@ -188,6 +217,8 @@ header.main-header {
   background-color: var(--gray-darker);
   width: fit-content;
   color: var(--yellow-light);
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .pill i {
