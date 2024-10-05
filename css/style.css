@@ -86,7 +86,7 @@ header.main-header {
 
 .content-wrapper {
   max-width: 1280px;
-  padding: 15px 30px;
+  padding: 40px 30px;
   margin: 0 auto;
 }
 
@@ -96,7 +96,27 @@ header.main-header {
 }
 
 .section-content {
-  padding: 10px 0;
+  padding: 40px 0;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  background: var(--yellow-light);
+  transition: 0.15s ease-in-out;
+}
+
+.primary-button {
+  background-color: var(--yellow-dark);
+}
+
+.secondary-button {
+  background-color: var(--yellow-dark);
 }
 
 .card-wrapper {
@@ -110,6 +130,7 @@ header.main-header {
 .banner {
   background-color: var(--gray-light);
   display: flex;
+  flex-direction: column;
   gap: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -118,7 +139,6 @@ header.main-header {
 .card {
   width: 150px;
   height: 175px;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -136,28 +156,49 @@ header.main-header {
   font-weight: bold;
 }
 
-.banner {
-  width: 500px;
-}
-
-.banner:hover {
-  background-color: var(--yellow-dark);
-  transition: 0.15s ease-in;
-  cursor: pointer;
-}
-
-.banner-image {
-  max-width: 300px;
-}
-
-img {
+.banner-image,
+.banner-image img {
   width: 100%;
+  height: 400px;
+}
+
+.banner-image img {
+  object-fit: fill;
 }
 
 .banner-title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.banner-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 30px 0 20px 0;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--gray-darker);
+  width: fit-content;
+  color: var(--yellow-light);
+}
+
+.pill i {
+  color: #eee;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 991px) {
