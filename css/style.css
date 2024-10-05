@@ -316,19 +316,9 @@ footer {
   .banner-title {
     font-size: 18px;
   }
-
-  .banner-image,
-  .banner-image img {
-    /* height: 300px; */
-  }
 }
 
 @media screen and (max-width: 767px) {
-  .banner-image,
-  .banner-image img {
-    /* height: 200px; */
-  }
-
   .section-title {
     font-size: 25px;
   }
@@ -341,11 +331,6 @@ footer {
 
   .banner {
     border-bottom-right-radius: 10px;
-  }
-
-  .banner-image,
-  .banner-image img {
-    /* height: 150px; */
   }
 
   .banner-buttons .primary-button {
