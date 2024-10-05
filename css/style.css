@@ -43,7 +43,7 @@ p.decorated {
 }
 
 header.main-header {
-  height: 60px;
+  height: 70px;
   padding: 0 20px;
 }
 
@@ -52,11 +52,11 @@ header.main-header {
   justify-content: space-between;
   align-items: center;
   height: inherit;
+  gap: 15px;
 }
 
-.branding {
-  font-size: 26px;
-  font-weight: bold;
+.branding img {
+  max-width: 250px;
 }
 
 .navigation {
