@@ -190,7 +190,11 @@ section.decorated-right:after {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.card-wrapper:last-of-type {
+  margin-bottom: 0;
 }
 
 .card,
